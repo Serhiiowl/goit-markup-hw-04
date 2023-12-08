@@ -41,6 +41,12 @@
      padding: 0 15px 0 15px;
  }
 
+ .container-footer {
+     width: 1158px;
+     margin: 0 auto;
+     padding: 0 15px 0 15px;
+     display: flex;
+ }
 
  /* #endregion */
 
@@ -165,6 +171,12 @@
      background-color: #2E2F42;
      line-height: 1.07142857143;
      padding: 188px 0;
+     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+         url(/images/people-office.jpg);
+     linear rgba(46, 47, 66, 0.7);
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     background-size: cover;
 
 
  }
@@ -248,6 +260,18 @@
 
  .main-two-list {
      width: calc((100% - 72px) / 4);
+ }
+
+ .icon-card {
+     width: 264px;
+     border: 1px solid rgba(142, 143, 153, 1);
+     border-radius: 4px;
+     background-color: rgba(244, 244, 253, 1);
+     margin-bottom: 8px;
+     box-sizing: border-box;
+     display: flex;
+     justify-content: center;
+     padding: 24px 0;
  }
 
  .info {
@@ -334,6 +358,7 @@
  .info-team {
      color: #434455;
      text-align: center;
+     margin-bottom: 8px;
  }
 
  /* #endregion */
@@ -383,6 +408,8 @@
  .footer {
      background-color: #2E2F42;
      padding: 100px 0;
+     display: flex;
+
  }
 
  .logo-footer {
@@ -411,6 +438,40 @@
      color: #F4F4FD;
      max-width: 264px;
      display: flex;
+     box-sizing: border-box;
+ }
+
+ .social-block {
+
+     margin-left: 120px;
+
+     width: 208px;
+
+
+ }
+
+ .social-link {
+     display: flex;
+     justify-content: space-between;
+
+     margin-top: auto;
+ }
+
+ .social {
+     display: block;
+     margin-bottom: 16px;
+     font-size: 16px;
+     font-weight: 500;
+     color: rgba(255, 255, 255, 1);
+     line-height: 1.5;
+     letter-spacing: 0.32;
+     font-family: "Roboto";
+
+ }
+
+ .team-name .social-link {
+     justify-content: center;
+     gap: 24px;
  }
 
  /* #endregion */
