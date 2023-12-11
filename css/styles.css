@@ -415,7 +415,8 @@
 
  }
 
- ..icon-list:focus {
+ .icon-link:focus,
+ .icon-link:hover {
      background-color: #404bbf;
  }
 
@@ -576,6 +577,15 @@
 
  .logo-p {
      margin-right: 120px;
+ }
+
+ .icon-link {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
  }
 
  /* #endregion */
