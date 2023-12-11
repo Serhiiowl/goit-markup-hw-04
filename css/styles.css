@@ -40,6 +40,7 @@
      width: 1158px;
      margin: 0 auto;
      padding: 0 15px 0 15px;
+
  }
 
  .container-footer {
@@ -47,6 +48,7 @@
      margin: 0 auto;
      padding: 0 15px 0 15px;
      display: flex;
+
  }
 
  /* #endregion */
@@ -56,6 +58,11 @@
  .head {
      border-bottom: 1px solid #e7e9fc;
      display: flex;
+     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+     box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+
+     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 
  }
 
@@ -68,6 +75,8 @@
  .head-nav {
      display: flex;
      align-items: center;
+     color: #404bbf;
+     position: relative;
  }
 
  .logo {
@@ -123,12 +132,20 @@
      font-style: bold;
      text-decoration: none;
      padding: 24px 0;
-     display: block
+     display: block;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .link-menu:hover::after {
+ .link-menu::after {
      content: "";
-     border-bottom: 4px dashed #4D5AE5;
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+     height: 4px;
+     background-color: #404bbf;
+     border-radius: 2px;
+
+
  }
 
  .link-menu:hover {
@@ -154,6 +171,7 @@
      text-decoration: none;
      display: block;
      padding: 24px 0;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
  }
 
@@ -181,6 +199,7 @@
      background-repeat: no-repeat;
      background-position: 50% 50%;
      background-size: cover;
+     max-width: 1440px;
 
 
  }
@@ -215,6 +234,7 @@
      border: none;
      display: block;
      margin: 0 auto;
+     transition: background-color 250 cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .button:hover {
@@ -276,6 +296,8 @@
      display: flex;
      justify-content: center;
      padding: 24px 0;
+     align-items: center;
+     height: 112px;
  }
 
  .info {
