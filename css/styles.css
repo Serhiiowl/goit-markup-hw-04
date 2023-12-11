@@ -391,6 +391,11 @@
 
  .icon {
      fill: rgba(77, 90, 229, 1);
+
+
+ }
+
+ .icon-list {
      width: 100%;
      height: 100%;
      background-color: #4d5ae5;
@@ -406,13 +411,13 @@
  fill: rgba(64, 75, 191, 1)
  }
 
- .icon:hover {
+ .icon-list:hover {
      fill: rgba(49, 208, 170, 1);
      background-color: #404bbf;
 
  }
 
- .icon:focus {
+ ..icon-list:focus {
      background-color: #404bbf;
  }
 
