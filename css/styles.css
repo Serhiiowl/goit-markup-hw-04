@@ -48,6 +48,7 @@
      margin: 0 auto;
      padding: 0 15px 0 15px;
      display: flex;
+     align-items: baseline;
 
  }
 
@@ -390,18 +391,30 @@
 
  .icon {
      fill: rgba(77, 90, 229, 1);
-     width: 40px;
-     height: 40px;
+     width: 100%;
+     height: 100%;
+     background-color: #4d5ae5;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
  }
 
- .team-back:hover .icon {
-     fill: rgba(64, 75, 191, 1)
+ /* .team-back:hover .icon { */
+ fill: rgba(64, 75, 191, 1)
  }
 
  .icon:hover {
      fill: rgba(49, 208, 170, 1);
+     background-color: #404bbf;
+
  }
 
+ .icon:focus {
+     background-color: #404bbf;
+ }
 
  /* #endregion */
 
@@ -537,7 +550,7 @@
  .social-link {
      display: flex;
      justify-content: space-between;
-
+     gap: 16px;
      margin-top: auto;
  }
 
