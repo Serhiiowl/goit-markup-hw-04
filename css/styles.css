@@ -134,11 +134,14 @@
      padding: 24px 0;
      display: block;
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     color: #404bbf;
      position: relative;
  }
 
- .link-menu::after {
+ .link-menu.current {
+     color: #404bbf;
+ }
+
+ .link-menu.current::after {
      content: "";
      position: absolute;
      left: 0;
@@ -146,11 +149,10 @@
      height: 4px;
      background-color: #404bbf;
      border-radius: 2px;
-
-
+     width: 100%;
  }
 
- .link-menu:hover:after {
+ .current:hover::after {
      width: 100%;
  }
 
@@ -200,7 +202,7 @@
      line-height: 1.07142857143;
      padding: 188px 0;
      background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-         url(/images/people-office.jpg);
+         url(../images/people-office.jpg);
      linear rgba(46, 47, 66, 0.7);
      background-repeat: no-repeat;
      background-position: center;
@@ -294,7 +296,6 @@
  }
 
  .icon-card {
-     width: 264px;
      border: 1px solid rgba(142, 143, 153, 1);
      border-radius: 4px;
      background-color: rgba(244, 244, 253, 1);
@@ -302,7 +303,6 @@
      box-sizing: border-box;
      display: flex;
      justify-content: center;
-     padding: 24px 0;
      align-items: center;
      height: 112px;
  }
@@ -406,9 +406,6 @@
 
  }
 
- /* .team-back:hover .icon { */
- fill: rgba(64, 75, 191, 1)
- }
 
  .icon:active {
      fill: rgba(49, 208, 170, 1);
@@ -501,14 +498,11 @@
      width: 100%;
      height: 100%;
      background-color: rgba(77, 90, 229, 1);
-
      transform: translatey(100%);
      transition: transform 250ms ease-in-out;
  }
 
- .box:hover .overlay {
-     transform: translatey(0);
- }
+
 
  .overlay .p-footer {
      margin-top: 40px;
@@ -583,14 +577,6 @@
 
  }
 
- .social-block {
-
-     margin-left: 120px;
-
-     width: 208px;
-
-
- }
 
  .social-link {
      display: flex;
@@ -632,3 +618,6 @@
  }
 
  /* #endregion */
+
+ у .social-block не треба margin-left: 120px;
+ та width: 208px;
