@@ -637,9 +637,9 @@
 
      transition: opacity 300ms ease-in, visibility 300ms ease-in;
 
-     opacity: 0;
+     /* opacity: 0;
      visibility: hidden;
-     pointer-events: none;
+     pointer-events: none; */
  }
 
 
@@ -705,6 +705,8 @@
  }
 
  .form-input {
+     font-size: 12px;
+     color: rgba(46, 47, 66, 0.4);
      display: block;
      width: 100%;
      height: 40px;
@@ -716,12 +718,15 @@
      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
+ .close-btn:focus,
  .form-comment:focus,
  .form-input:focus {
      border-color: rgba(77, 90, 229, 1);
  }
 
-
+ .cont-input {
+     position: relative;
+ }
 
  .icon-close {
      fill: rgba(46, 47, 66, 1);
@@ -733,6 +738,7 @@
      border: none;
  }
 
+ .close-btn:focus,
  .close-btn:active .icon-close {
 
      fill: #fff;
@@ -745,13 +751,14 @@
      fill: rgba(46, 47, 66, 1);
 
      left: 16px;
-     top: 43%;
+     top: 50%;
      transition: fill 250ms cubic-bezier (0.4, 0, 0.2, 1);
+     transform: translateY(-50%);
 
  }
 
  .form-input:focus+.icon-backdrop {
-     fill: rgb(0, 255, 183);
+     fill: rgba(64, 75, 191, 1);
  }
 
  .form-comment {
@@ -768,6 +775,7 @@
  }
 
  .form-accept {
+     position: relative;
      display: flex;
      align-items: center;
      justify-content: flex-start;
@@ -816,10 +824,13 @@
 
  }
 
- /* .icon-click,
+ .icon-click,
  .icon-click2 {
      position: absolute;
- } */
+     top: 0;
+     left: 0;
+ }
+
  .form-checkbox::aktiv {
      fill: #31d0aa;
  }
@@ -833,7 +844,7 @@
 
  .icon-click2 {
 
-     stroke: rgba(0, 0, 0, 1);
+     stroke: rgb(43, 81, 121);
      stroke-width: 0px;
  }
 
